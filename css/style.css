@@ -1,0 +1,266 @@
+:root {
+    --fs-xl: 5rem;
+    --fs-600; 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+}
+
+body {
+    background-color:#eee
+}
+
+a {
+    cursor: pointer;
+}
+
+.header-main {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main-logo{
+    width: fit-content;
+    height: 100%;
+    background-color: none;
+    padding-left: 60px;
+    display: flex;
+}
+
+.header-main-logo img {
+    height: 50px;
+    align-self: center;
+}
+
+.header-main-nav{
+    width: fit-content;
+    height: 100%;
+    background-color: none; 
+    align-items: center;
+}
+
+.header-main-nav ul {
+ list-style: none;
+ margin-left: 15px;
+}
+
+.header-main-nav ul li {
+    display: inline;
+    float: left;
+}
+
+.header-main-nav ul li a {
+    padding: 0 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 70px;
+    color: #616F6F;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-main-nav ul li a:hover {
+    color: #032025;
+}
+
+
+/*hero banner*/
+
+
+.flexbox-container{
+    width: 100%;
+    background-color: #616F6F;
+    max-height: 540px;
+    display: flex;
+    padding: 10%;
+    margin-bottom: 120px;
+
+}
+.flexbox-item-portrait{
+    width: 300px;
+    height: 300px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-bottom: 0%;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 32px;
+    font-weight: lighter;
+    margin-left: 5%;
+    margin-top: 2%;
+    
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #616F6F;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0 ;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #616F6F;
+    font-size: 16px;
+    line-height: 0;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5%;
+    
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #616F6F;
+    font-size: 25px;
+    line-height: 0;
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 5%;
+}
+p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #616F6F;
+    text-align: center;
+}
+
+.image {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 75px;
+    color: white;
+
+}
+
+.flexContainer{
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: center;
+    padding: 0%;
+    
+}
+
+.card-1 {
+    width: 33%;
+    padding:5%;
+    margin:5%;  
+    background-color: #fff;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-2 {
+    width: 33%;
+    padding:5%;
+    margin:5%;  
+    background-color: #fff;  
+    justify-content: center;
+    text-align: center;
+}
+
+.card-3 {
+    width: 33%;
+    padding:5%;
+    margin:5%;  
+    background-color: #fff; 
+    justify-content: center;
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "project-1 project-1"
+    "project-2 project-2"
+    "project-3 project-3";
+}
+
+.project-1 {
+    grid-area: project-1
+}
+
+.project-2 {
+    grid-area: project-2
+}
+
+.project-3 {
+    grid-area: project-3
+}
+
+
+
+/*footer*/  
+
+.footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background: #616F6F;
+    height: 120px;
+    margin:0
+  }
+  
+  .footer a {
+    padding: 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    float: right;
+    margin-right: 5%;
+  }
+  
+  .ig {
+    color: white;
+  }
+  
+  .fb {
+    color:white;
+  }
+  
+  .tw {
+    color: white;
+  }
+  
+  
+ @media screen and (min-width:736px){
+
+    .grid{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "project-1 project-1"
+        "project-2 project-2"
+        "project-3 project-3";
+    }
+ }
+
+ /* On screens that are 736px or less, set the headshot image to 150px */
+@media screen and (max-width: 736px) {
+    flexbox-item-portrait {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+
