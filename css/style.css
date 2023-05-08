@@ -62,12 +62,31 @@ a {
 }
 
 .header-main-nav ul li a:hover {
-    color: #032025;
+    color: #966708;
 }
 
 
 /*hero banner*/
 
+/*.content-box{
+    width: 35%;
+    background: #ad7810;
+    padding: 8px 0px;
+    display: right;
+    margin-left: 5%;
+    border-radius: 5px;
+    margin-top: 60px;
+    
+}*/
+
+.content-before{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+    align-items: center;
+    padding: 10px 10px;
+}
 
 .flexbox-container{
     width: 100%;
@@ -102,6 +121,7 @@ h2 {
     margin-top: 2%;
     
 }
+
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;

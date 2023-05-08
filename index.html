@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
+<!--Header-->
+    <header>
+        <meta charse ="UTF-8" />
+        <link rel="stylesheet" href="./index.css"> 
          <title>Portfolio</title>
          <link href="css/style.css" type="text/css" rel="stylesheet">
-</head>
+         <script src="js/jquesry-3.2.1.min.js"></script>
+         <script>
+            $(document).ready(function() {
+
+                $("flexbox-container")
+            });
+         </script>
+
+    </header>
+
 <body>
     <header class="header-main">
         <div class="header-main-logo">
@@ -24,8 +35,13 @@
             <div class="flexbox-item flexbox-item-1">
             <h1 style="font-size:5vw;">Nicole Walkenhorst</h1>
             <h2 style="font-size:2vw;">A creative who loves to craft a good story through data & design.</h2>
+        <div class="content-box">
+           <!--<p class="content-before">Click me to see more!</p>-->
         </div>
+        </div>
+
         </section>
+
 
         <!--My UX Skills section coded using CSS flex-->
 
@@ -86,8 +102,8 @@
             <a href="#" class="tw">Resume</a>
             <a href="#" class="ig">Email</a>
         </div>
-</body>
-    <script
-    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
-        </script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
 </html>
